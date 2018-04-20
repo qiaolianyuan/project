@@ -129,4 +129,7 @@ export default {
         font-size: 0.13rem;
         color: #ff5000;
     }
+    .swiper-container {
+        width: 3.6rem;
+    }
 </style>
