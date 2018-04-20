@@ -3,6 +3,12 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
+import './stylesheels/main.css'
+import './modules/rem'
+
+//处理axios，让组件通过this.$http来使用
+import axios from 'axios'
+Vue.prototype.$http = axios
 
 Vue.config.productionTip = false
 
