@@ -1,19 +1,19 @@
-import Vue from 'vue'
-import Router from 'vue-router'
+import Vue from 'vue';
+import Router from 'vue-router';
 
+import Home from '../components/Home/Home.vue';
+import Wenti from '../components/Wenti/Wenti.vue';
+import Version from '../components/Version/Version.vue';
+import Details from '../components/Details/Details.vue';
 
-import Home from '../components/Home/Home.vue'
-import Wenti from '../components/Wenti/Wenti.vue'
-import Version from '../components/Version/Version.vue'
-
-
-Vue.use(Router)
+Vue.use(Router);
 
 export default new Router({
   routes: [
     {path: '', redirect: '/home'},
     {path: '/home', name: 'home', component: Home},
-    {path: '/wenti', name: 'wenti', component: Wenti},
-    {path: '/version', name: 'version', component: Version}
+    {path: '/wenti/:details', name: 'wenti', component: Wenti, props:true},
+    {path: '/version/:jsonurl', name: 'version', component: Version, props:true},
+    {path: '/details/:message', name:'details', component:Details, props:true}
   ]
-})
+});

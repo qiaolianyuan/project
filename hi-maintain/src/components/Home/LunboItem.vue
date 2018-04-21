@@ -8,7 +8,7 @@
                 :key="nav.id"
             >
                 <router-link
-                    :to="{name:'version'}"
+                    :to='{name:"details", params:{"message":nav.title}}'
                     tag="div"
                     class="hotScrollItem"
                 >
@@ -34,28 +34,28 @@ export default {
         return {
             navs: [
                 {
-                    id: 1, title: 'iphone6', content:'外屏碎（显示正常）', price: '￥159'
+                    id: 1, title: 'iphone6', content:'外屏碎（显示正常）', price: '￥159', jsonurl:'/static/json/Hardware.json'
                 },
                 {
-                    id: 2, title: 'iphone6Puls', content:'外屏碎（显示正常）', price: '￥159'
+                    id: 2, title: 'iphone6Puls', content:'外屏碎（显示正常）', price: '￥159', jsonurl:'/static/json/Hardware.json'
                 },
                 {
-                    id: 3, title: 'iphone6S', content:'外屏碎（显示正常）', price: '￥159'
+                    id: 3, title: 'iphone6S', content:'外屏碎（显示正常）', price: '￥159', jsonurl:'/static/json/Hardware.json'
                 },
                 {
-                    id: 4, title: 'iphone6SPlus', content:'外屏碎（显示正常）', price: '￥179'
+                    id: 4, title: 'iphone6SPlus', content:'外屏碎（显示正常）', price: '￥179', jsonurl:'/static/json/Hardware.json'
                 },
                 {
-                    id: 5, title: 'iphone7', content:'外屏碎（显示正常）', price: '￥249'
+                    id: 5, title: 'iphone7', content:'外屏碎（显示正常）', price: '￥249', jsonurl:'/static/json/Hardware.json'
                 },
                 {
-                    id: 6, title: 'iphone7Plus', content:'外屏碎（显示正常）', price: '￥269'
+                    id: 6, title: 'iphone7Plus', content:'外屏碎（显示正常）', price: '￥269', jsonurl:'/static/json/Hardware.json'
                 },
                 {
-                    id: 7, title: '华为 P9', content:'屏幕碎', price: '￥320'
+                    id: 7, title: '华为 P9', content:'屏幕碎', price: '￥320', jsonurl:'/static/json/Hardware.json'
                 },
                 {
-                    id: 8, title: '魅族PRO 6', content:'屏幕碎', price: '￥580'
+                    id: 8, title: '魅族PRO 6', content:'屏幕碎', price: '￥580', jsonurl:'/static/json/Hardware.json'
                 },
             ]
         }

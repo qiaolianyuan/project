@@ -4,6 +4,7 @@
             v-for="phone in phones"
             :key="phone.id"
             :phone="phone"
+            :details="phone.details"
         ></weixiu-item>
     </div>
 </template>
@@ -16,16 +17,16 @@ export default {
         return  {
             phones:[
                 {
-                    id: 1, src: '//pic.hiweixiu.com/hiweixiu-app/fault_ico/shoujiweixiu.png', title: '手机维修'
+                    id: 1, src: '//pic.hiweixiu.com/hiweixiu-app/fault_ico/shoujiweixiu.png', title: '手机维修', details:'/static/json/WeixiuDetails.json'
                 },
                 {
-                    id: 2, src: '//pic.hiweixiu.com/hiweixiu-app/fault_ico/pingbanweixiu.png', title:'平板维修'
+                    id: 2, src: '//pic.hiweixiu.com/hiweixiu-app/fault_ico/pingbanweixiu.png', title:'平板维修', details:'/static/json/WeixiuDetails.json'
                 },
                 {
-                    id: 3, src: '//pic.hiweixiu.com/hiweixiu-app/fault_ico/huishoufuwu.png', title: '回收服务'
+                    id: 3, src: '//pic.hiweixiu.com/hiweixiu-app/fault_ico/huishoufuwu.png', title: '回收服务', details:'/static/json/WeixiuDetails.json'
                 },
                 {
-                    id: 4, src: '//pic.hiweixiu.com/hiweixiu-app/fault_ico/quanguowangdian.png', title: '全国地址'
+                    id: 4, src: '//pic.hiweixiu.com/hiweixiu-app/fault_ico/quanguowangdian.png', title: '全国地址', details:'/static/json/WeixiuDetails.json'
                 }
             ]
         }

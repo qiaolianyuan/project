@@ -1,6 +1,6 @@
 <template>
     <router-link
-        :to="{name:'wenti'}"
+        :to="{name:'wenti', params:{'details':details}}"
         tag="div"
     >
         <div class="typeListItem">
@@ -12,7 +12,7 @@
 <script>
 export default {
     name: 'WeixiuItem',
-    props: ['phone']
+    props: ['phone', 'details']
 }
 </script>
 

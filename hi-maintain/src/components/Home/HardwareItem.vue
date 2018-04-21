@@ -1,6 +1,6 @@
 <template>
     <router-link
-        :to="{name:'version'}"
+        :to="{name:'version',params:{'jsonurl':jsonurl}}"
         tag="div"
         class="homeFaultItem"
     >
@@ -11,7 +11,7 @@
 <script>
 export default {
     name: 'HardwareItem',
-    props: ['phone']
+    props: ['phone','jsonurl']
 }
 </script>
 

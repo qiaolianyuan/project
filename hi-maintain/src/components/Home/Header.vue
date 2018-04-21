@@ -13,7 +13,7 @@ export default {
 </script>
 <style scoped>
 .indextop {
-    height: .44px;
+    height: 44px;
     background: url("http://pic.hiweixiu.com/hiweixiu-mobile/img/logo.png") center center no-repeat #fff;
     background-size: 69px 21px;
 }
