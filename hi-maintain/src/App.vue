@@ -6,7 +6,11 @@
 
 <script>
 export default {
-  name: 'App'
+  name: 'App',
+  created () {
+    //获取购物车信息
+    this.$store.dispatch('initPhones')
+  }
 }
 </script>
 

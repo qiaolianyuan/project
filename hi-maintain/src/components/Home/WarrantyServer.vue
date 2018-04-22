@@ -1,13 +1,15 @@
 <template>
     <div class="warranty-server">
-        <div
+        <router-link
+            tag="div"
             class="item"
             v-for = "nav in navs"
             :key = "nav.id"
+            :to="{name:nav.src}"
         >
             <img :src = "nav.imgUrl">
             <p>{{ nav.title }}</p>
-        </div>
+        </router-link>
     </div>
 </template>
 
@@ -17,9 +19,9 @@ export default {
     data () {
         return {
             navs:[
-                {id:1, imgUrl:'//pic.hiweixiu.com/hiweixiu-mobile/img/wxzl.png', title:'Hi维修保障'},
-                {id:2, imgUrl:'//pic.hiweixiu.com/hiweixiu-mobile/img/jsyz.png', title:'极速优质服务'},
-                {id:3, imgUrl:'////pic.hiweixiu.com/hiweixiu-mobile/img/jgtm.png', title:'价格公开透明'}
+                {id:1, imgUrl:'//pic.hiweixiu.com/hiweixiu-mobile/img/wxzl.png', title:'Hi维修保障',src:''},
+                {id:2, imgUrl:'//pic.hiweixiu.com/hiweixiu-mobile/img/jsyz.png', title:'极速优质服务',src:''},
+                {id:3, imgUrl:'////pic.hiweixiu.com/hiweixiu-mobile/img/jgtm.png', title:'Hi优购',src:'goods'}
             ]
         }
     }
