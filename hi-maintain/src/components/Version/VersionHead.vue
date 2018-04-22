@@ -69,8 +69,8 @@ export default {
        font-size: 24px;
    }
    .title{
-        height: 44px;
-        line-height: 44px;
+        height: 0.44rem;
+        line-height: 0.44rem;
         text-align: center;
         font-size: 18px;
         color: #ff5000;
@@ -86,8 +86,8 @@ export default {
    }
    .phoneList ul li{
         text-align: center;
-        height: 50px;
-        line-height: 50px;
+        height: .45rem;
+        line-height: .45rem;
         font-size: 14px;
         overflow: hidden;
         border-bottom: 1px solid #e9e9e9;

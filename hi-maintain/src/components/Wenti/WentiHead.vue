@@ -41,8 +41,8 @@ export default {
        font-size: 24px;
    }
    .title{
-        height: 44px;
-        line-height: 44px;
+        height: 0.44rem;
+        line-height: 0.44rem;
         text-align: center;
         font-size: 18px;
         color: #ff5000;

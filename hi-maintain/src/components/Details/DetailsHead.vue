@@ -28,18 +28,18 @@ export default {
         left: 0;
         z-index: 10;
         width: 100%;
-        height: 0.44rem;
+        height: 44px;
         background-color: #fff;
     }
     .details-head p{
        height: 100%;
-       line-height: 0.44rem;
+       line-height: 44px;
     }
    .left{
        position: absolute;
        z-index: 2;
        width: 0.38rem;
-       height: 0.44rem;
+       height: 44px;
        display: flex;
        justify-content: center;
        align-items: center;

@@ -1,33 +1,32 @@
 <template>
-    <div class="buycar-head">
+    <div class="login-header">
         <div class="left">
             <router-link 
-                to="/goods"
+                to="/home"
                 class="fa fa-angle-left"
             ></router-link>
             </div>
-        <p class="title">购物车</p>
+        <p class="title">登录</p>
     </div>
 </template>
 
 <script>
 export default {
-    name:'BuycarHead'
+    name: 'LoginHeader'
 }
 </script>
 
 <style scoped>
-   .buycar-head{
+    .login-header {
         position: fixed;
         top: 0;
-        left: 0;
-        z-index: 10;
+        z-index: 9;
         width: 100%;
-        height: 0.44rem;
-        background-color: #fff;
+        height: .44rem;
+        background-color: #f9f9f9;
     }
-    .buycar-head p{
-       height: 100%;
+    .wenti-head p{
+        height: 100%;
        line-height: 0.44rem;
     }
    .left{
@@ -48,4 +47,3 @@ export default {
         color: #ff5000;
    }
 </style>
-
