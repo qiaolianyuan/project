@@ -54,4 +54,9 @@ export default {
         font-size: 12px;
         color: #888;
     }
+    .right{
+        display: flex;
+        flex-direction:row-reverse;
+        justify-content: space-around;
+    }
 </style>
